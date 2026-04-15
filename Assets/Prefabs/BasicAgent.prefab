@@ -201,7 +201,6 @@ GameObject:
   - component: {fileID: 4910731242737115125}
   - component: {fileID: 856214482895806148}
   - component: {fileID: 7375703218755078227}
-  - component: {fileID: 3022881594856781587}
   - component: {fileID: 8488053600263327100}
   m_Layer: 0
   m_Name: BasicAgent
@@ -291,6 +290,9 @@ MonoBehaviour:
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
   targetTransform: {fileID: 0}
+  winMaterial: {fileID: 2100000, guid: e7c54e478ed9dcf4dabe51a2c1b4f071, type: 2}
+  loseMaterial: {fileID: 2100000, guid: 71072068ea7f4d044aa24724b6f7c987, type: 2}
+  floorMeshRenederer: {fileID: 0}
 --- !u!114 &7375703218755078227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,27 +318,11 @@ MonoBehaviour:
   m_Model: {fileID: 0}
   m_InferenceDevice: 0
   m_BehaviorType: 0
-  m_BehaviorName: Agent
+  m_BehaviorName: MoveToGoal
   TeamId: 0
   m_UseChildSensors: 1
   m_UseChildActuators: 1
   m_ObservableAttributeHandling: 0
---- !u!114 &3022881594856781587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5672608206296870031}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88b6042bc9a5d4aa58d931eae49442e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agentParameters:
-    maxStep: 0
-  hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
 --- !u!114 &8488053600263327100
 MonoBehaviour:
   m_ObjectHideFlags: 0
