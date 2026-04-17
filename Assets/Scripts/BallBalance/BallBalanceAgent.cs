@@ -8,7 +8,6 @@ public class BallBalanceAgent : Agent
     [SerializeField] private bool isTraining;
     [SerializeField] private Transform ballTransform;
     [SerializeField] private Rigidbody ballRigidbody;
-    [SerializeField] [Range(0f, 50f)] private float ballMaxVelocity = 1f;
     
     private float ballPadding = 0.25f;
 
